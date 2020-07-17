@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+</body>
+<script>
+    var xhr = undefined;
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest();
+    }else{
+        xhr = ActiveXObject('Microsoft.XMLHttp')
+    }
+    xhr.open('get','https://developer.duyiedu.com/edu/testAjaxCrossOrigin')
+    xhr.onreadystatechange = function(){
+        consoe.log(xhr.readyState);
+    }
+    
+</script>
+</html>
